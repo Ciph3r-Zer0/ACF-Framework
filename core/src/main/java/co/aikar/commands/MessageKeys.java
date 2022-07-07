@@ -60,7 +60,7 @@ public enum MessageKeys implements MessageKeyProvider {
     HELP_SEARCH_HEADER,
     ;
 
-    private final MessageKey key = MessageKey.of("acf-core." + this.name().toLowerCase(Locale.ENGLISH));
+    private final MessageKey key = MessageKey.of(this.name().toLowerCase(Locale.ENGLISH));
 
     public MessageKey getMessageKey() {
         return key;

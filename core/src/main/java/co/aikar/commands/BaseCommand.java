@@ -576,7 +576,7 @@ public abstract class BaseCommand {
             List<String> sargs = Arrays.asList(args);
             cmd.invoke(issuer, sargs, commandOperationContext);
         } else {
-            issuer.sendMessage(MessageType.ERROR, MessageKeys.PERMISSION_DENIED);
+            issuer.sendMessage(MessageType.ERROR, MessageKeys.PERMISSION_DENIED, "{permission}", cmd.permission);
         }
     }
 
