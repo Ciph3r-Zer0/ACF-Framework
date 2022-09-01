@@ -36,7 +36,7 @@ class PaperAsyncTabCompleteHandler implements Listener {
 
     PaperAsyncTabCompleteHandler(PaperCommandManager manager) {
         this.manager = manager;
-        manager.log(LogLevel.INFO, "Enabled Asynchronous Tab Completion Support!");
+        //manager.log(LogLevel.INFO, "Enabled Asynchronous Tab Completion Support!");
     }
 
     @EventHandler(ignoreCancelled = true)
